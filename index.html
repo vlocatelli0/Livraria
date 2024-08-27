@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+ <div class="container">
+ <h2>Login Admin.</h2>
+ <label for="email">ID do Administrador:</label><br>
+ <input type="email" id="email" name="email"><br>
+ <label for="password">Senha:</label><br>
+ <input type="password" id="password" name="password"><br>
+ <a href='trocarsenha.html'><button>Esqueceu sua senha?</button></a>
+ <p></p>
+ <a href='livro.html'><button>Entrar</button></a>
+<p></p>
+<a href='cadastro.html'><button>Cadastrar-se</button></a>
+
+ </form>
+ </div>
+ <script>        
+ if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./service-worker.js')
+        .then(registration => {
+            console.log('Serviço Iniciado - Service Start', registration.scope);
+        })
+        .catch(error => {
+            console.log('Falha na inicialização do serviço - Service Fail', error);
+        });
+}
+</script>
+</body>
+</html>

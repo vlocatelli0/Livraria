@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <link rel="stylesheet" type="text/css" href="livro.css">
+</head>
+<body>
+ <div class="container">
+ <h2>Cadastro de Livro</h2>
+ <form action="/submit\_registration" method="post">
+ <label for="fname">ISBN:</label><br>
+ <input type="text" id="fname" name="fname"><br>
+ <label for="lname">Título:</label><br>
+ <input type="text" id="lname" name="lname"><br>
+ <label for="lname">Autor:</label><br>
+ <input type="text" id="cpf" name="cpf"><br>
+ <label for="email">Gênero:</label><br>
+ <input type="email" id="email" name="email"><br>
+ <label for="password">Editora:</label><br>
+ <input type="password" id="password" name="password"><br>
+ <label for="password">Número de Páginas::</label><br>
+ <input type="password" id="password" name="password"><br>
+ <label for="lname">Ano de Publicação:</label><br>
+ <input type="text" id="cpf" name="cpf"><br>
+ <p></p>
+ 
+ <button id="cadastrar-livro">Cadastrar Livro</button>
+ <p id="mensagem"></p>
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+ <script>
+   $("#cadastrar-livro").click(function() {
+     $("#mensagem").text("✅livro cadastrado com sucesso");
+   });
+ </script>
+  
+
+
+
+ </form>
+ </div>
+</body>
+</html>
